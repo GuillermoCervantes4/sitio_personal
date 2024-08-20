@@ -1,0 +1,20 @@
+h1{
+    color: brown;
+    background-color: bisque;
+}
+
+p{
+    display: block;
+}
+
+.image1{
+    display: block;
+    width: 500px;
+    height: 350px;
+}
+
+.image2{
+    display: block;
+    width: 350px;
+    height: 500px;
+}
