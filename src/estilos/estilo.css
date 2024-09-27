@@ -1,3 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: blue;
+}
+
+.titulo{
+    background-color: aqua;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+p{
+    color: white;
+}
+
+.barra{
+    display: flex;
+}
+
+.barra .rectangulo{
+    width: 100%;
+    max-width: 250px;
+    height: 100vh; 
+    background: rgb(103, 104, 134);
+    display: flex;
+    flex-direction: column;
+}
+
+.barra .rectangulo div{
+    margin: 20px 20px 30px 0;
+    text-align: center;
+}
+
+.barra .rectangulo div:nth-child(1){
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.barra .rectangulo div:nth-child(2){
+    margin-left: 40px;
+}
+
+.barra .rectangulo div:nth-child(3){
+    margin-left: 40px;
+}
+
+.rectangulo div button{
+    margin: 40px;
+    width: 90px;
+    margin-bottom: 70px;
+    margin-left: -10px;
+    background: rgb(103, 104, 134);
+    border: rgb(103, 104, 134);
+    text-align: center;
+}
+
+.barra .rectangulo div button strong a{
+    font-family: sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: contents;
+} 
+
+.barra .rectangulo div button:hover{
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    background: blue;
+}
+
+.contenido{ 
+    margin: 0 auto;
+    max-width: 800px;   
+}
+
+.contenido div{
+    display: flex;
+}
+
+.image1{
+    margin-top: 60px;
+    display: flex;
+}
+
 .bloque1 {
     border: 8px solid rgba(255, 60, 60, 0.856);
     border-radius: 25px;
