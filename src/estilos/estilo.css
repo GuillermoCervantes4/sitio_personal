@@ -17,6 +17,7 @@ body{
 .titulo {
     background-color: rgb(0, 0, 0);
     height: 150px;
+    padding: 25px;
     color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
@@ -195,7 +196,7 @@ p{
     background-color: rgb(94, 57, 9);
     width: 200px;
     height: 200px;
-    margin: -600px 0 0 455px;
+    margin: -600px 0 0 600px;
     z-index: 1;
 }
 
@@ -210,7 +211,7 @@ p{
     background-color: rgb(165, 42, 42);
     width: 500px;
     z-index: 2;
-    margin: -200px 0 0 1120px;
+    margin: -200px 0 0 1225px;
 }
 
 .comentario2 p{
@@ -306,6 +307,7 @@ p{
     align-items: center;
     justify-items: center;
     text-align: center;
+    z-index: 1;
 }
 
 .contenido .hobbies .grilla div p{
@@ -372,6 +374,16 @@ p{
     background-image: url('../Fotos/comer.jfif');
     background-position: center;
     background-size: cover;
+}
+
+.sticker{
+    position: absolute;
+    border: none;
+    margin-top: -1180px;
+    right: 200px;
+    width: 300px;
+    transform: rotate(15deg);
+    z-index: 0;
 }
 
 /*----------------------------------------------------------*/
@@ -462,16 +474,16 @@ p{
     font-size: 35px;
 }
 
-.contenido .grilla {
-    height: 100vh;
+.contenido .grilla1 {
+    height: 50vh;
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.contenido .grilla div {
-    background-color: #797979;
+.contenido .grilla1 div {
+    background-color: #35b3fc;
     padding: 20px;
     font-weight: bold;
     font-size: 24px;
@@ -482,7 +494,55 @@ p{
     text-align: center;
 }
 
-.contenido .grilla div a{
+.contenido .grilla1 div a{
     text-decoration: none;
     justify-content: center;
+    color: aliceblue;
+}
+
+.contenido .grilla1 div:nth-child(11){
+    background-color: rgb(0, 68, 255);
+    grid-column:2/5;
+    grid-row:3/3;
+    display: block; 
+    justify-content:baseline; 
+    align-items: center; 
+    text-align: center;
+}
+.contenido .grilla1 div:nth-child(11) a{
+    display: block; 
+    margin: 0 0 10px 0;
+}
+
+img{
+    border: 10px solid rgb(0, 91, 196);
+}
+
+.contenido1{
+    font-family: sans-serif;
+    font-size: 40px;
+    margin: 50px 10px 0 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido1 .apunta{
+    width: 800px;
+    height: 800px;
+    background-color: #ce790a;
+    color: aliceblue;
+    margin: 50px 10px 0 50px;
+}
+
+.contenido1  .apunta p{
+    align-items: center;
+    justify-items: center;
+}
+
+.contenido1  .apunta:hover{ 
+    background-image: url("../Fotos/apuntando.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 800px;
 }
