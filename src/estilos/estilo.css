@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../tipografias/minecrafter-ma3dw.ttf') format('truetype');
+}
+
+
 body{
     background: rgb(255, 255, 255);
 }
 
-.titulo{
+.titulo {
     background-color: rgb(0, 0, 0);
     height: 150px;
     color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: 'Minecraft'; 
     text-align: center;
     font-size: 50px;
 }
@@ -32,7 +38,7 @@ h2{
 .barra .rectangulo{
     width: 100%;
     max-width: 250px;
-    height: 100vh; 
+    height: 160vh; 
     background: rgb(0, 255, 179);
     display: flex;
     flex-direction: column;
@@ -83,13 +89,15 @@ h2{
 }
 
 .contenido{ 
-      margin: 40px 0 0 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
 }
 
 .contenido .status {
     display: flex;
     font-family: sans-serif;
-  }
+}
   
 .contenido .status img {
     margin-right: 10px; 
@@ -104,7 +112,19 @@ h2{
 
 .contenido .status .texto h3{
     font-size: 40px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    width: 500px;
     margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido .frase{
+    text-align: center;
+    margin: 60px auto; 
+    margin-top: 80px;
+    width: 100%;
+    font-size: 60px;
 }
 
 .contenido .status .texto p{
@@ -120,7 +140,349 @@ p{
     width: 500px; 
 }
 
+/*-----------------------------------------------*/
 .imagefamily{
     width: 800px; 
+    align-content: center;
+    justify-content: center;
 }
 
+.contenido .family{
+    display: flex;
+    font-family: sans-serif;
+}
+
+.contenido .family .texto{
+    margin-left: 30px;
+}
+
+.advertencia{
+    margin: 30px 60px 40px 0;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.contenido .emperador{
+    text-align: center;
+    color: red
+}
+
+.contenido .emperador img{
+    width: 500px;
+    border: 30px solid black;
+}
+
+.contenido .family .texto h3{
+    font-size: 40px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    width: 500px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido .family .texto p{
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.comentario1{
+    position: absolute;
+    padding: 20px;
+    font-size: 40px;
+    font-family: sans-serif;
+    background-color: rgb(94, 57, 9);
+    width: 200px;
+    height: 200px;
+    margin: -600px 0 0 455px;
+    z-index: 1;
+}
+
+.comentario1 p{
+    color: white;
+}
+
+.comentario2{
+    position: absolute;
+    padding: 20px;
+    font-size: 60px;
+    background-color: rgb(165, 42, 42);
+    width: 500px;
+    z-index: 2;
+    margin: -200px 0 0 1120px;
+}
+
+.comentario2 p{
+    color: white;
+}
+
+
+/*-----------------------------------------------*/
+.contenido .amigos{
+    display: block;
+}
+
+.contenido .amigos .grupo{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenido .amigos .texto h3{
+    font-size: 30px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 0 10px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido .amigos .texto p{
+    font-size: 25px;
+    margin: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-family: sans-serif
+}
+
+.contenido .amigos .image1{
+    width: 600px;
+}
+
+/*-----------------------------------------------*/
+
+.contenido .mascotas{
+    display: block;
+}
+
+.contenido .mascotas .grupo{
+    display: flex; 
+    margin-bottom: 50px
+}
+
+.contenido .mascotas .grupo h3{
+    font-size: 30px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 0 10px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido .mascotas .grupo p{
+    font-size: 25px;
+    margin: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-family: sans-serif;
+}
+
+.kafka{
+    width: 600px;
+    margin: 0 0 0 20px;
+}
+
+.ale{
+    width: 600px;
+    margin: 0 0 0 20px;
+}
+
+
+/*----------------------------------------------------------*/
+.contenido .hobbies .grilla {
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contenido .hobbies .grilla div {
+    background-color: #797979;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: sans-serif;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.contenido .hobbies .grilla div p{
+    background-color: #ce790a;
+    border-radius: 50px;
+    color: white;
+}
+
+.contenido .hobbies .grilla div:nth-child(1){
+    background-image: url('../Fotos/musica.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(2){
+    background-image: url('../Fotos/manga.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(3){
+    background-image: url('../Fotos/dibujar.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(4){
+    background-image: url('../Fotos/baile.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(5){
+    background-image: url('../Fotos/series_animadas.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(6){
+    background-image: url('../Fotos/gym.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(7){
+    background-image: url('../Fotos/imaginacion.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(8){
+    background-image: url('../Fotos/videojuegos.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(9){
+    background-image: url('../Fotos/ajedrez.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido .hobbies .grilla div:nth-child(10){
+    background-image: url('../Fotos/comer.jfif');
+    background-position: center;
+    background-size: cover;
+}
+
+/*----------------------------------------------------------*/
+
+.contenido .cultural{
+    display: block;
+}
+
+.contenido .cultural .grupo{
+    display: flex; 
+    margin-bottom: 50px
+}
+
+.contenido .cultural .grupo h3{
+    font-size: 30px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 0 10px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido .cultural .grupo p{
+    font-size: 25px;
+    margin: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-family: sans-serif;
+}
+
+.moreno, .asia{
+    width: 400px;
+}
+
+.asia{
+    width: 700px;
+}
+
+.contenido .cultural .grupo .texto ul li{
+    font-size: 25px;
+    margin: 0 20px 20px 90px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-family: sans-serif;
+}
+
+/*----------------------------------------------------------*/
+
+.contenido .musical{
+    display: block;
+}
+
+.contenido .musical .grupo{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contenido .musical .texto h3{
+    font-size: 30px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 0 10px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido .musical .texto p{
+    font-size: 25px;
+    margin: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-family: sans-serif
+}
+
+.phil{
+    display: flex;
+    width: 500px;
+}
+
+.alan{
+    display: flex;
+    width: 700px;
+}
+
+.contenido h3{
+    margin: 20px 20px 20px 0;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.contenido .grilla {
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contenido .grilla div {
+    background-color: #797979;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.contenido .grilla div a{
+    text-decoration: none;
+    justify-content: center;
+}
