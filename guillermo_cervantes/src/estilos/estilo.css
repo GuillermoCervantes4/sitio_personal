@@ -196,7 +196,7 @@ p{
     background-color: rgb(94, 57, 9);
     width: 200px;
     height: 200px;
-    margin: -600px 0 0 600px;
+    margin: -600px 0 0 450px;
     z-index: 1;
 }
 
@@ -211,7 +211,7 @@ p{
     background-color: rgb(165, 42, 42);
     width: 500px;
     z-index: 2;
-    margin: -200px 0 0 1225px;
+    margin: -200px 0 0 1125px;
 }
 
 .comentario2 p{
@@ -379,9 +379,9 @@ p{
 .sticker{
     position: absolute;
     border: none;
-    margin-top: -1700px;
+    margin-top: -1250px;
     right: 200px;
-    width: 800px;
+    width: 400px;
     transform: rotate(15deg);
     z-index: 0;
 }
